@@ -15,4 +15,9 @@ public class FizzBuzzTest {
     public void shouldReturn1For1(){
         assertEquals(fizzBuzz.valueOf(1), "1");
     }
+
+    @Test
+    public void shouldReturn2For2(){
+        assertEquals(fizzBuzz.valueOf(2), "2");
+    }
 }
