@@ -14,5 +14,9 @@ describe FizzBuzz do
     it "should return Fizz for 3" do
       FizzBuzz.new.value_of(3).should == "Fizz"
     end
+
+    it "should return Buzz for 5" do
+      FizzBuzz.new.value_of(5).should == "Buzz"
+    end
   end
 end
