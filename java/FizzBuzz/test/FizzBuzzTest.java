@@ -20,4 +20,9 @@ public class FizzBuzzTest {
     public void shouldReturn2For2(){
         assertEquals(fizzBuzz.valueOf(2), "2");
     }
+
+    @Test
+    public void shouldReturn2FizzFor3(){
+        assertEquals(fizzBuzz.valueOf(3), "Fizz");
+    }
 }
