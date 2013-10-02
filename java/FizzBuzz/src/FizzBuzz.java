@@ -1,12 +1,13 @@
 public class FizzBuzz {
 
     public String valueOf(int number) {
+        String value = "";
         if (number % 3 == 0) {
-            return "Fizz";
-        } else if (number % 5 == 0) {
-            return "Buzz";
-        } else {
-            return String.valueOf(number);
+            value +="Fizz";
         }
+        if (number % 5 == 0) {
+            value += "Buzz";
+        }
+        return value == "" ? String.valueOf(number) : value;
     }
 }
