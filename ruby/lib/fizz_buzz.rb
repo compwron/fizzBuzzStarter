@@ -2,6 +2,6 @@ class FizzBuzz
   # attr_reader :numbers
 
   def value_of number
-    number.to_s
+    number % 3 == 0 ? "Fizz" : number.to_s
   end
 end
