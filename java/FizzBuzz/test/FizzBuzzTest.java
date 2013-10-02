@@ -8,7 +8,7 @@ public class FizzBuzzTest {
 
     @Before
     public void setUp(){
-        fizzBuzz = new FizzBuzz();
+        fizzBuzz = new FizzBuzz(1);
     }
 
     @Test
@@ -34,5 +34,10 @@ public class FizzBuzzTest {
     @Test
     public void shouldReturnFizzBuzzForNumberDivisibleByBoth3And55(){
         assertEquals(fizzBuzz.valueOf(15), "FizzBuzz");
+    }
+
+    @Test
+    public void shouldHaveNumbers(){
+        assertEquals(2, fizzBuzz.numbers().size());
     }
 }
