@@ -2,14 +2,6 @@ class FizzBuzz
   # attr_reader :numbers
 
   def value_of number
-  	response = ""
-  	if (number  % 3 == 0) then
-  		response += "Fizz"
-  	end
-  	if (number % 5 == 0) then 
-  		response += "Buzz"
-  	end
-  	if (response == "") then return number.to_s end
-  	response
+  	return (number % 15 == 0) ? "FizzBuzz" : (number % 3 == 0 ? "Fizz" : (number % 5 == 0 ? "Buzz" : number.to_s))
   end
 end
