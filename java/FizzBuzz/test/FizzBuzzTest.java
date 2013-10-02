@@ -22,7 +22,12 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturn2FizzFor3(){
+    public void shouldReturnFizzFor3(){
         assertEquals(fizzBuzz.valueOf(3), "Fizz");
+    }
+
+    @Test
+    public void shouldReturnBuzzFor5(){
+        assertEquals(fizzBuzz.valueOf(5), "Buzz");
     }
 }
