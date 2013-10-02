@@ -17,17 +17,22 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturn2For2(){
+    public void shouldReturn2ForNumberNotDivisibleBy3Or5(){
         assertEquals(fizzBuzz.valueOf(2), "2");
     }
 
     @Test
-    public void shouldReturnFizzFor3(){
+    public void shouldReturnFizzForNumberDivisibleBy3(){
         assertEquals(fizzBuzz.valueOf(3), "Fizz");
     }
 
     @Test
-    public void shouldReturnBuzzFor5(){
+    public void shouldReturnBuzzForNumberDivisibleBy5(){
         assertEquals(fizzBuzz.valueOf(5), "Buzz");
+    }
+
+    @Test
+    public void shouldReturnFizzBuzzForNumberDivisibleByBoth3And55(){
+        assertEquals(fizzBuzz.valueOf(15), "FizzBuzz");
     }
 }
